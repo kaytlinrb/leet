@@ -8,4 +8,7 @@ describe('String#leet') do
   it('replace o or O with 0') do
     expect(('bow').leet).to(eq('b0w'))
   end
+  it('replace I with 1, but not i') do
+    expect(('Imbibe').leet).to(eq('1mbib3'))
+  end
 end
